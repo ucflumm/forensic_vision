@@ -1,0 +1,4 @@
+/.venv/include
+/.venv/lib
+/.venv/bin
+/datasets

@@ -1,0 +1,12 @@
+# PyTorch CPU build (works in Linux containers)
+torch==2.2.2
+torchvision==0.17.2
+
+numpy==1.26.4
+
+opencv-python-headless==4.9.0.80
+pillow
+matplotlib
+tqdm
+albumentations
+
