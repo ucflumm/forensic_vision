@@ -2,7 +2,7 @@ FROM python:3.11-slim
 
 # System deps (opencv + basic build tools)
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git curl ca-certificates \
+    git curl ca-certificates wget unzip \
     libgl1 libglib2.0-0 \
  && rm -rf /var/lib/apt/lists/*
 
@@ -16,5 +16,5 @@ RUN pip install --no-cache-dir -U pip \
 # Copy code
 COPY . /app
 
-CMD ["python", "src/train_tamper_unet.py"]
+CMD ["python", "src/train.py"]
 

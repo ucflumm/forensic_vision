@@ -7,6 +7,5 @@ numpy==1.26.4
 opencv-python-headless==4.9.0.80
 pillow
 matplotlib
-tqdm
+tqdm==4.67.1
 albumentations
-
